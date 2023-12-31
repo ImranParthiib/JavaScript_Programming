@@ -31,20 +31,20 @@ Open the project in your text editor and start exploring the code. Feel free to 
 
 ## Learning Path
 
-#### Beginner's Level:
+### Beginner's Level:
 
-Explore the basics of JavaScript syntax.
-Tackle simple coding challenges.
+1.Explore the basics of JavaScript syntax.
+2.Tackle simple coding challenges.
 
-##### Intermediate Level:
+#### Intermediate Level:
 
-Dive into DOM manipulation.
-Work on intermediate projects to apply your skills.
+1.Dive into DOM manipulation.
+2.Work on intermediate projects to apply your skills.
 
-#### Advanced Level:
+### Advanced Level:
 
-Learn asynchronous programming.
-Contribute to complex projects and share your solutions.
+1.Learn asynchronous programming.
+2.Contribute to complex projects and share your solutions.
 
 ## Contribution Guidelines
 
