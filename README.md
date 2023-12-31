@@ -34,16 +34,19 @@ Open the project in your text editor and start exploring the code. Feel free to 
 ### Beginner's Level:
 
 1.Explore the basics of JavaScript syntax.
+
 2.Tackle simple coding challenges.
 
 #### Intermediate Level:
 
 1.Dive into DOM manipulation.
+
 2.Work on intermediate projects to apply your skills.
 
 ### Advanced Level:
 
 1.Learn asynchronous programming.
+
 2.Contribute to complex projects and share your solutions.
 
 ## Contribution Guidelines
