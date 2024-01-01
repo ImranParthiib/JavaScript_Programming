@@ -17,3 +17,9 @@ if(student =true){
 console.log(summation);
 document.getElementById("p1").innerHTML = "Hey " +firstName+"_";
 document.getElementById("p3").innerHTML = ", Long time No See, Where have you been these days?";
+
+let total = 30;
+
+total = total ** 2;
+console.log(total)
+let result

@@ -1,3 +1,7 @@
 .align{
     display: flex;
 }
+p{
+    font-family: Verdana;
+    font-size: 1.2em;
+}
