@@ -22,4 +22,14 @@ let total = 30;
 
 total = total ** 2;
 console.log(total)
-let result
+let result = 12 % 5 + 8 / 2;
+/*
+Operator Precedence 
+1.Parenthesis
+2.exponents
+3.Multiplication & Division & Modulus
+4.Addition & substraction
+*/
+
+console.log(result);
+
