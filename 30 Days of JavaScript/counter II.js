@@ -15,12 +15,16 @@ var createCounter = function (init) {
     current = init;
     return current;
   }
-  return { increment, decrement, reset };
+
+  return {
+    increment: increment,
+    decrement: decrement,
+    reset: reset,
+  };
 };
 
-/**
- * const counter = createCounter(5)
- * counter.increment(); // 6
- * counter.reset(); // 5
- * counter.decrement(); // 4
- */
+// Example usage:
+const counter = createCounter(5);
+console.log(counter.increment()); // 6
+console.log(counter.reset()); // 5
+console.log(counter.decrement()); // 4
