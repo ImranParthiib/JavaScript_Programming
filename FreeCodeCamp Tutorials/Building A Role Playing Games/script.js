@@ -283,5 +283,9 @@ function pick(guess) {
     text.innerText += "Right! You win 20 gold!";
     gold += 20;
     goldText.innerText = gold;
+  } else {
+    text.innerText += "Wrong! You lose 10 health!";
+    health -= 10;
+    healthText.innerText = health;
   }
 }
