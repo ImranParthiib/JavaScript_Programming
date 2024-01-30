@@ -1,22 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Js Graphics</title>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
+    <!-- Bar Chart -->
     <div
-      id="myChart"
-      style="width: 100%; max-width: 600px; height: 500px"
+      id="barChart"
+      style="width: 100%; max-width: 600px; height: 300px"
     ></div>
+
+    <!-- Pie Chart -->
+    <div
+      id="pieChart"
+      style="width: 100%; max-width: 600px; height: 300px"
+    ></div>
+
+    <!-- 3D Pie Chart -->
+    <div
+      id="pieChart3D"
+      style="width: 100%; max-width: 600px; height: 300px"
+    ></div>
+
+    <!-- Scatter Plot -->
+    <div
+      id="scatterPlot"
+      style="width: 100%; max-width: 600px; height: 300px"
+    ></div>
+
+    <!-- Line Graph -->
+    <div
+      id="lineGraph"
+      style="width: 100%; max-width: 600px; height: 300px"
+    ></div>
+
     <script>
       google.charts.load("current", { packages: ["corechart"] });
-      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawCharts);
 
-      function drawChart(){
-        
+      function drawCharts() {
+        // Bar Chart Data
+        const barData = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2016", 1000, 400],
+          ["2017", 1170, 460],
+          ["2018", 660, 1120],
+          ["2019", 1030, 540],
+        ]);
+        const barOptions = {
+          title: "Company Performance",
+          bars: "vertical",
+        };
+
+        // Pie Chart Data
+        const pieData = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Work", 11],
+          ["Eat", 2],
+          ["Commute", 2],
+          ["Watch TV", 2],
+          ["Sleep", 7],
+        ]);
+        const pieOptions = {
+          title: "My Daily Activities",
+        };
+
+        // 3D Pie Chart Data
+        const pie3DData = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Work", 11],
+          ["Eat", 2],
+          ["Commute", 2],
+          ["Watch TV", 2],
+          ["Sleep", 7],
+        ]);
+        const pie3DOptions = {
+          title: "My Daily Activities",
+          is3D: true,
+        };
+
+        // Scatter Plot Data
+        const scatterData = google.visualization.arrayToDataTable([
+          ["Age", "Weight"],
+          [8, 12],
+          [4, 5.5],
+          [11, 14],
+          [4, 5],
+          [3, 3.5],
+          [6.5, 7],
+        ]);
+        const scatterOptions = {
+          title: "Age vs. Weight comparison",
+          hAxis: { title: "Age", minValue: 0, maxValue: 15 },
+          vAxis: { title: "Weight", minValue: 0, maxValue: 15 },
+          legend: "none",
+        };
+
+        // Line Graph Data
+        const lineData = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2016", 1000, 400],
+          ["2017", 1170, 460],
+          ["2018", 660, 1120],
+          ["2019", 1030, 540],
+        ]);
+        const lineOptions = {
+          title: "Company Performance",
+        };
+
+        // Draw Charts
+        const barChart = new google.visualization.ColumnChart(
+          document.getElementById("barChart")
+        );
+        barChart.draw(barData, barOptions);
+
+        const pieChart = new google.visualization.PieChart(
+          document.getElementById("pieChart")
+        );
+        pieChart.draw(pieData, pieOptions);
+
+        const pieChart3D = new google.visualization.PieChart(
+          document.getElementById("pieChart3D")
+        );
+        pieChart3D.draw(pie3DData, pie3DOptions);
+
+        const scatterChart = new google.visualization.ScatterChart(
+          document.getElementById("scatterPlot")
+        );
+        scatterChart.draw(scatterData, scatterOptions);
+
+        const lineChart = new google.visualization.LineChart(
+          document.getElementById("lineGraph")
+        );
+        lineChart.draw(lineData, lineOptions);
       }
     </script>
   </body>
