@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting</title>
+  </head>
+  <body>
+    <h1>JavaScript Sorting</h1>
+    <p id="initialFruits"></p>
+    <p id="finalFruits"></p>
+    <p id="reverseFruits"></p>
+    <script>
+      const fruits = ["Banana", "Apple", "Mango", "Orange"];
+
+      document.getElementById("initialFruits").innerHTML = fruits;
+      fruits.sort();
+      document.getElementById("finalFruits").innerHTML = fruits;
+      fruits.reverse();
+      document.getElementById("reverseFruits").innerHTML = fruits;
+    </script>
+  </body>
+</html>
