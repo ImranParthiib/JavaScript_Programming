@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Light Bulb</title>
+  </head>
+  <body style="text-align: center">
+    <h1 style="text-align: center">What can JavaScript Do?</h1>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of</p>
+    <p>the src(source) attribute of an image.</p>
+
+    <button
+      style="
+        background-color: rgb(251, 234, 6);
+        border: 0;
+        border-radius: 18px;
+        padding: 7px;
+      "
+      type="button"
+      onclick="document.getElementById('light').src='images/pic_bulbon.gif'"
+    >
+      Turn on Light
+    </button>
+
+    <img id="light" src="images/pic_bulboff.gif" alt="Bulb" />
+
+    <button
+      style="
+        background-color: rgb(169, 213, 198);
+        border: 0;
+        border-radius: 18px;
+        padding: 7px;
+      "
+      type="button"
+      onclick="document.getElementById('light').src='images/pic_bulboff.gif'"
+    >
+      Turn off the light
+    </button>
+  </body>
+</html>
