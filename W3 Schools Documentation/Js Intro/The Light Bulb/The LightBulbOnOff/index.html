@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightOnOff</title>
+  </head>
+  <body style="background-color: wheat; margin-top: 200px">
+    <h1 style="text-align: center; color: hsl(121, 70%, 31%)">
+      JavaScript Light ON-OFF
+    </h1>
+    <img
+      id="light"
+      style="display: block; margin: 0 auto"
+      src="pic_bulboff.gif"
+      alt=""
+    />
+    <div style="display: flex; justify-content: center">
+      <button
+        type="button"
+        style="
+          padding: 20px;
+          margin: 10px;
+          border-radius: 20px;
+          background-color: crimson;
+          color: aliceblue;
+          border: none;
+        "
+        onclick="lightOn();"
+      >
+        Click to Turn ON the Light
+      </button>
+      <button
+        type="button"
+        style="
+          padding: 20px;
+          margin: 10px;
+          border-radius: 20px;
+          background-color: lightcoral;
+          color: aliceblue;
+          border: none;
+        "
+        onclick="lightOff();"
+      >
+        Click to Turn OFF the Light
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
