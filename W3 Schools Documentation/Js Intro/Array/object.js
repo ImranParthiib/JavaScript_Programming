@@ -17,7 +17,7 @@ let b = 4;
 let result = 3 ** 4;
 
 console.log(result);
-
+1
 let text1 = "A";
 let text2 = "B";
 let result2 = text1 < text2;
