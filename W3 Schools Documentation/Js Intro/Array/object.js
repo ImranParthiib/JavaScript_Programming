@@ -3,7 +3,7 @@ const car = {
     model: "500wD",
     color: "white"
 };
-
+2
 car.color = "red";
 car.owner = "ImranParthib";
 
