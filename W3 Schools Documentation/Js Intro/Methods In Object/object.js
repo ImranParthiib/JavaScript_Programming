@@ -8,4 +8,3 @@ const person = {
 };
 
 console.log(person.fullName());
-12
