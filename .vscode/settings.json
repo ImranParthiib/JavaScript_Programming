@@ -3,5 +3,9 @@
   "files.associations": {
     "source_location": "cpp",
     "stacktrace": "cpp"
-  }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true
 }
