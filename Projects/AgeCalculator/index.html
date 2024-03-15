@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-100 font-poppins flex items-center justify-center h-screen"
+  >
+    <div class="wrapper bg-white p-8 rounded-md shadow-md w-96 md:w-80 lg:w-96">
+      <h1 class="text-2xl font-bold mb-4 text-center border  rounded-full">Age Calculator</h1>
+      <div class="table grid grid-cols-3 gap-4">
+        <div class="row1 text-xs text-gray-600 font-semibold uppercase ml-5">
+          DAY
+        </div>
+        <div class="row1 text-xs text-gray-600 font-semibold uppercase ml-5">
+          MONTH
+        </div>
+        <div class="row1 text-xs text-gray-600 font-semibold uppercase ml-5">
+          YEAR
+        </div>
+
+        <div class="row2">
+          <input
+            type="text"
+            id="day"
+            name="day"
+            placeholder="DD"
+            class="p-2 border rounded focus:outline-none focus:border-blue-500 w-full text-lg font-bold"
+          />
+          <div id="day_alert" class="text-xs text-red-500 mt-1"></div>
+        </div>
+        <div class="row2">
+          <input
+            type="text"
+            id="month"
+            name="month"
+            placeholder="MM"
+            class="p-2 border rounded focus:outline-none focus:border-blue-500 w-full text-lg font-bold"
+          />
+          <div id="month_alert" class="text-xs text-red-500 mt-1"></div>
+        </div>
+        <div class="row2">
+          <input
+            type="text"
+            id="year"
+            name="year"
+            placeholder="YYYY"
+            class="p-2 border rounded focus:outline-none focus:border-blue-500 w-full text-lg font-bold"
+          />
+          <div id="year_alert" class="text-xs text-red-500 mt-1"></div>
+        </div>
+      </div>
+<hr class="mt-6 ">
+      <div class="button_container mt-6 flex justify-end">
+        <button
+          id="calculateBtn"
+          onclick="calculateAge()"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-right"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="age_display mt-6">
+        <p class="text-5xl font-bold italic">
+          <span id="calculated_year" class="text-indigo-500">--</span> years
+        </p>
+        <p class="text-5xl font-bold italic">
+          <span id="calculated_month" class="text-indigo-500">--</span> months
+        </p>
+        <p class="text-5xl font-bold italic">
+          <span id="calculated_day" class="text-indigo-500">--</span> days
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
