@@ -5,8 +5,8 @@ function updateCountDown() {
     countElement.textContent = count;
     count--;
     if (count < 0) {
-        clearInterval(interVaId);
+        clearInterval(interValId);
     }
 }
 updateCountDown();
-const interVaId = setInterval(updateCountDown, 1000);
+const interValId = setInterval(updateCountDown, 1000);
