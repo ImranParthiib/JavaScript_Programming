@@ -1,14 +1,10 @@
-console.log("I am learning JavaScript");
-let num = 5;
-
 function fibonacci(totalTerm) {
   let firstTerm = 0;
   let secondTerm = 1;
   let result = firstTerm + "," + secondTerm;
 
   if (totalTerm <= 0) {
-    console.log(result);
-    return 0;
+    return console.log("1");
   }
 
   let lastTerm = firstTerm + secondTerm;
@@ -22,4 +18,4 @@ function fibonacci(totalTerm) {
   console.log(result);
 }
 
-fibonacci(10);
+fibonacci(0);

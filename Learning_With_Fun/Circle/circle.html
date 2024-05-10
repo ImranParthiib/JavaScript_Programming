@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle Drawing</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="200" height="200" style="border:1px solid black;"></canvas>
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Define the circle parameters
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+    var startAngle = 0;
+    var endAngle = 2 * Math.PI;
+
+    // Draw the circle
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.stroke();
+  </script>
+</body>
+</html>

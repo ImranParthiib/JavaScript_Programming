@@ -1,6 +1,6 @@
 function palindrome(str) {
     const rev = str.split("").reverse().join("");
-    if (rev == str) {
+    if (rev === str) {
         return "Palindrome";
     }
     else {
