@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #95cf5f;
+  text-align: center;
+}
+h1 {
+  margin-top: 20px;
+  background-color: aqua;
+  width: 50%;
+  border-radius: 10px;
+  display: inline-block;
+}
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+#board {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.cell {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: lemonchiffon;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(215, 8, 112);
+}
