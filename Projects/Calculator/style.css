@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  color: rgb(255, 0, 149);
+  font-weight: bold;
+  background-image: url(images/background.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex {
+  display: flex;
+  margin-top: 200px;
+}
+.cal {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+#plus,
+#minus,
+#multiply,
+#divide {
+  width: 40px;
+  height: 30px;
+  font-size: larger;
+  border-radius: 7px;
+}
+#FirstNumber {
+  margin-left: 17px;
+  height: 30px;
+}
+#SecondNumber {
+  height: 30px;
+}
+div input {
+  color: rgb(255, 0, 149);
+  border-color: rgb(226, 43, 195);
+  border-radius: 3px;
+}
+#Result {
+  border-color: rgb(226, 43, 195);
+  padding: 7px;
+  border-radius: 7px;
+  color: rgb(241, 5, 135);
+  font-weight: 900;
+}

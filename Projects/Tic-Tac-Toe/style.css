@@ -19,19 +19,23 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+  height: 40vh;
 }
 #board {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  align-items: center;
+  text-align: center;
+
 }
 .cell {
   border: 1px solid #000;
   border-radius: 5px;
   background-color: lemonchiffon;
-  padding: 20px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

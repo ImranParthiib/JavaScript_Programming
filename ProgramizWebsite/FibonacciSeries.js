@@ -18,4 +18,4 @@ function fibonacci(totalTerm) {
   console.log(result);
 }
 
-fibonacci(0);
+fibonacci(23);
