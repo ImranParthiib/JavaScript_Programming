@@ -20,3 +20,6 @@ function calculatePrice(items) {
 
   return totalPrice; // Step 3: Return the variable at the end
 }
+
+const totalPrice = calculatePrice(itmes);
+console.log(totalPrice);
