@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  word-break: break-word; /* Changed to break-word for better word wrapping */
+  line-height: 1.6; /* Improved readability */
+}
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#main-title {
+  margin: 0;
+}
+
+/* Section Styles */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #333;
+  font-size: 48px;
+}
+h2 {
+  color: #333;
+  font-size: 36px;
+}
+
+/* List Styles */
+#item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+#item-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  background-color: #e4e4e4;
+}
+#item-list li {
+  margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#click-me-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+#add-item-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
