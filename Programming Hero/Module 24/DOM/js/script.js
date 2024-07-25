@@ -27,3 +27,9 @@ if (window.innerWidth <= 768) {
     listItems[i].style.borderRadius = "10px";
   }
 }
+
+const h2 = document.querySelectorAll("h2");
+
+for (const header of h2) {
+  header.classList.add("color");
+}

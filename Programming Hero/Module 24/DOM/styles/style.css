@@ -32,13 +32,14 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h1 {
-  color: #333;
+  color: #db2929;
   font-size: 48px;
 }
-h2 {
-  color: #333;
-  font-size: 36px;
-}
+ .color{
+  color: #1eb535;
+  font-size: 38px;
+ }
+
 
 /* List Styles */
 #item-list {
