@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(207, 239, 202);
+}
+#feedback {
+  background-color: rgb(184, 246, 175);
+}
+
+button {
+  background-color: rgb(72, 194, 56);
+  border-color: rgb(72, 194, 56);
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
