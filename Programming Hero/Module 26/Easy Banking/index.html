@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Banking</title>
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="images/register.png" type="image/x-icon" />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/3180a89ad8.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="flex justify-between items-center bg-slate-900 p-4 md:px-28">
+      <h1 class="text-2xl text-purple-400 font-bold">
+        <span class="text-green-400">Easy</span> Banking
+      </h1>
+      <nav class="hidden md:flex md:space-x-14">
+        <a href="#" class="text-white hover:text-green-400">Home</a>
+        <a href="#" class="text-white hover:text-green-400">Services</a>
+        <a href="#" class="text-white hover:text-green-400">About</a>
+        <a href="#" class="text-white hover:text-green-400">Contact</a>
+      </nav>
+      <button
+        id="menu-button"
+        class="text-white focus:outline-none md:hidden"
+        aria-label="Toggle menu"
+      >
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <nav
+        id="menu"
+        class="absolute top-16 left-0 h-full w-44 bg-slate-900 text-white transform -translate-x-full transition-transform md:hidden"
+      >
+        <ul class="flex flex-col space-y-2 p-4">
+          <li><a href="#" class="hover:text-green-400">Home</a></li>
+          <li><a href="#" class="hover:text-green-400">Services</a></li>
+          <li><a href="#" class="hover:text-green-400">About</a></li>
+          <li><a href="#" class="hover:text-green-400">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="bg-slate-800">
+      <section>
+        <div class="text-white p-4 md:px-28">
+          <h2 class="text-3xl font-bold text-center">
+            Welcome to Easy Banking
+          </h2>
+          <p class="text-center mt-4">
+            We provide the best banking services for you. You can easily manage
+            your money with us.
+          </p>
+        </div>
+        <div class="flex items-center justify-center mt-4 pb-4 bg-gray-800">
+          <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h1 class="text-3xl text-white mb-4">Register Now</h1>
+            <p class="text-white mb-6">
+              Sign up for an account and start banking with us today!
+            </p>
+
+            <form>
+              <div class="mt-4">
+                <label for="name" class="block text-white">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="block w-full px-4 py-2 mt-2 rounded"
+                />
+              </div>
+              <div class="mt-2">
+                <label for="email" class="block text-white">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="block w-full px-4 py-2 mt-2 rounded"
+                />
+              </div>
+              <div class="mt-2">
+                <label for="password" class="block text-white">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="block w-full px-4 py-2 mt-2 rounded"
+                />
+              </div>
+              <div class="mt-2">
+                <label for="confirm-password" class="block text-white"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  id="confirm-password"
+                  class="block w-full px-4 py-2 mt-2 rounded"
+                />
+              </div>
+              <button class="bg-green-400 text-white px-4 py-2 mt-4 rounded">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-slate-900">
+      <div class="text-white p-4 md:px-28">
+        <p class="text-center">
+          &copy; 2021 Easy Banking. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Linking -->
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
