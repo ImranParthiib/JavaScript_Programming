@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Easy Banking</title>
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="../images/register.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/3180a89ad8.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="flex justify-between items-center bg-slate-900 p-4 md:px-28">
+      <h1 class="text-2xl text-purple-400 font-bold">
+        <span class="text-green-400">Easy</span> Banking
+      </h1>
+      <nav class="hidden md:flex md:space-x-14">
+        <a href="../index.html" class="text-white hover:text-green-400">Home</a>
+        <a href="./services.html" class="text-white hover:text-green-400"
+          >Services</a
+        >
+        <a href="./about.html" class="text-white hover:text-green-400">About</a>
+        <a href="./contact.html" class="text-white hover:text-green-400"
+          >Contact</a
+        >
+      </nav>
+      <button
+        id="menu-button"
+        class="text-white focus:outline-none md:hidden"
+        aria-label="Toggle menu"
+      >
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+      <nav
+        id="menu"
+        class="absolute top-16 left-0 h-full w-44 bg-slate-900 text-white transform -translate-x-full transition-transform md:hidden"
+      >
+        <ul class="flex flex-col space-y-2 p-4">
+          <li><a href="../index.html" class="hover:text-green-400">Home</a></li>
+          <li>
+            <a href="./services.html" class="hover:text-green-400">Services</a>
+          </li>
+          <li><a href="./about.html" class="hover:text-green-400">About</a></li>
+          <li>
+            <a href="./contact.html" class="hover:text-green-400">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-grow bg-slate-800 text-white p-4 md:px-28">
+      <section>
+        <h2 class="text-3xl text-center font-bold mb-4">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-slate-900 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Account Opening</h3>
+            <p>
+              Open a new account with us and enjoy a wide range of benefits.
+            </p>
+          </div>
+          <div class="bg-slate-900 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Loan Facilities</h3>
+            <p>
+              Get a loan from us and fulfill your dreams without any hassle.
+            </p>
+          </div>
+          <div class="bg-slate-900 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Online Banking</h3>
+            <p>
+              Access your account online and enjoy a seamless banking
+              experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-3xl text-center font-bold mb-4 mt-8">Banking Now</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-rose-700 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">
+              Deposit $ <span id="deposit-total">0</span>
+            </h3>
+            <p>Deposited money in your account.</p>
+          </div>
+          <div class="bg-blue-900 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Withdraw $ <span>10</span></h3>
+            <p>The money you have withdrawn from your account.</p>
+          </div>
+          <div class="bg-pink-800 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">
+              Balance $ <span id="balance-total">00</span>
+            </h3>
+            <p>Balance in your account.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-purple-950 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Deposit your Amount</h3>
+            <h2 class="pb-4">
+              You cannot withdraw your immediate deposited money
+            </h2>
+            <input
+              id="deposit-input"
+              class="text-slate-950 rounded-lg w-full p-2"
+              type="text"
+              placeholder="Enter Deposit Amount"
+            />
+            <button
+              id="deposit-button"
+              class="text-white bg-green-500 rounded-lg mt-2 p-2 w-full"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-indigo-950 p-4 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Withdraw Your Money</h3>
+            <h2 class="pb-4">
+              You cannot withdraw your immediate deposited money
+            </h2>
+            <input
+              id="withdraw-input"
+              class="text-slate-950 rounded-lg w-full p-2"
+              type="text"
+              placeholder="Enter Withdraw Amount"
+            />
+            <button
+              id="withdraw-button"
+              class="text-white bg-green-500 rounded-lg mt-2 p-2 w-full"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-slate-900">
+      <div class="text-white p-4 md:px-28">
+        <p class="text-center">
+          &copy; 2021 Easy Banking. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- JavaScript Linking -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/deposit.js"></script>
+    <script src="../js/withdraw.js"></script>
+  </body>
+</html>
