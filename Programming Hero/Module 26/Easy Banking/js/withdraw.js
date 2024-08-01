@@ -1,9 +1,16 @@
 const updateWidthdrawTotal = () => {
   const withdrawInput = getInputValue("withdraw-input");
-  if (inputValue === 0) return; // Do not update if the input value is invalid
   const preWithdrawValue = getpreValue("withdraw-total");
-  console.log(preWithdrawValue);
-  console.log(withdrawInput);
+
+  const preBalance = getpreValue("balance-total");
+  if (withdrawInput > preBalance) {
+    alert("Please enter a valid amount.");
+  } else {
+    const totalWithdraw = withdrawInput + preWithdrawValue;
+    document.getElementById("withdraw-total").innerText = totalWithdraw;
+    const balanceTotal = preBalance - withdrawInput;
+    document.getElementById("balance-total").innerText = balanceTotal;
+  }
 };
 
 document
