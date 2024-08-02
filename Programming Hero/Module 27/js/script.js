@@ -37,7 +37,7 @@ const withdraw = () => {
   const preWithdraw = getTextValue("withdraw-total");
   const preBalance = getTextValue("balance-total");
   if (preBalance < withdrawInput) {
-    alert("You don't have enough balance");
+    showModal("You don't have enough balance");
     return;
   }
   const newWithdraw = withdrawInput + preWithdraw;
@@ -59,3 +59,24 @@ document
     console.log("Withdraw button clicked");
     withdraw();
   });
+
+// Modal Functions
+const showModal = (message) => {
+  const modal = document.getElementById("custom-alert");
+  const modalMessage = document.getElementById("modal-message");
+  modalMessage.innerText = message;
+  modal.classList.remove("hidden");
+};
+
+const closeModal = () => {
+  const modal = document.getElementById("custom-alert");
+  modal.classList.add("hidden");
+};
+
+// Close the modal when the user clicks anywhere outside of the modal
+window.onclick = function (event) {
+  const modal = document.getElementById("custom-alert");
+  if (event.target == modal) {
+    modal.classList.add("hidden");
+  }
+};
