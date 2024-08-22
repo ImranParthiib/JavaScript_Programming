@@ -29,3 +29,29 @@ console.log(myVar); // Output: undefined
 var myVar = "Hello, World!";
 console.log(myVar); // Output: Hello, World!
 ```
+
+### JavaScript `this` Keyword
+
+The `this` keyword in JavaScript refers to the object it belongs to. It has different values depending on where it is used:
+
+- In a method, `this` refers to the owner object.
+- Alone, `this` refers to the global object (in a browser, it refers to `window`).
+- In a function, `this` refers to the global object (in strict mode, it is `undefined`).
+- In an event, `this` refers to the element that received the event.
+
+#### Examples
+
+##### In a Method
+
+In a method, `this` refers to the owner object.
+
+```javascript
+const aboutMe = {
+  firstname: "Imran",
+  lastName: "Parthib",
+  fullName: function () {
+    return `${this.firstname} ${this.lastName}`;
+  },
+};
+console.log(aboutMe.fullName()); // Output: Imran Parthib
+```
