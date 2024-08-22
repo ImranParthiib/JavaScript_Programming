@@ -5,6 +5,6 @@ JavaScript is the programming language of the Web.
 
 # JavaScript Concepts
 
-## [Hositing](F:\JavaScript_Programming\W3 Schools Documentation\JavaScript Hoisting\hoisting.js)
+### Hoisting
 
-Hoisting is JavaScript's default behavior of moving declarations to the top.
+[Hositing](https://github.com/ImranParthibInsights/JavaScript_Programming/blob/main/W3%20Schools%20Documentation/JavaScript%20Hoisting/hoisting.js) is JavaScript's default behavior of moving declarations to the top.
