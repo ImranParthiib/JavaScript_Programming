@@ -2,6 +2,14 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => response.json())
   .then((json) => console.log(json));
 
+const load = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  const data = await res.json();
+  console.log(data);
+};
+
+load();
+
 const user = "https://jsonplaceholder.typicode.com/users";
 
 fetch(user)
