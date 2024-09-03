@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Phone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="flex flex-col md:flex-row justify-between items-center bg-gray-200 p-2"
+    >
+      <div class="mb-2 md:mb-0">
+        <h2 class="text-xl text-purple-600">
+          <i class="fas fa-mobile-alt inline-block align-middle"></i>
+          Phone Search
+        </h2>
+      </div>
+      <div class="text-purple-800">
+        <nav>
+          <ul class="flex justify-between items-center">
+            <li class="mr-4">Upcoming</li>
+            <li>Recent</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- ?_____________Input Field_________________ ?-->
+      <section class="flex mt-10 gap-3 justify-center">
+        <input
+          id="search-field"
+          type="text"
+          placeholder="Search..."
+          class="input input-bordered input-primary w-full max-w-xs"
+        />
+        <button onclick="searchPhone()" id="search-button" class="btn btn-info">
+          Search
+        </button>
+      </section>
+      <!-- ?_____________Phone Container_________________ ?-->
+      <section
+        id="phone-container"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2 mt-8"
+      ></section>
+    </main>
+    <!-- JavaScript Link -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
