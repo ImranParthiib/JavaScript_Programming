@@ -14,6 +14,5 @@ console.log(result);
 const factorialFunction = (num) => {
   return num == 1 || num == 0 ? 1 : num * factorial(num - 1);
 };
-
 const numFactorial = factorialFunction(5);
 console.log(numFactorial);
