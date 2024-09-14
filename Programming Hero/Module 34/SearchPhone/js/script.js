@@ -36,7 +36,7 @@ const displayPhone = (phones, showAll) => {
         <h2 class="text-slate-950 card-title">${phone.phone_name}</h2>
         <p class="text-slate-800">${phone.brand}</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Details</button>
+          <button onClick="showDetails('${phone.slug}')" class="btn btn-primary">Details</button>
         </div>
       </div>
     `;
@@ -44,12 +44,63 @@ const displayPhone = (phones, showAll) => {
   });
 };
 
+const showDetails = async (id) => {
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/phone/${id}`
+  );
+  const data = await res.json();
+  const phone = data.data;
+  showDetailsModal(phone);
+  console.log(phone);
+};
+
+const showDetailsModal = (phone) => {
+  const modal = document.getElementById("show_details_modal");
+  const modalBody = document.getElementById("modal-body");
+  // Blur the background when the modal is opened
+  document.getElementById("phone-container").classList.add("blur");
+
+  modalBody.innerHTML = `
+    <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+      <figure class="flex justify-center p-2 bg-gray-100">
+        <img class="rounded-lg" src="${phone.image}" alt="${phone.brand}" />
+      </figure>
+      <div class="card-body p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">${phone.name}</h2>
+        <p class="text-gray-700 mb-2"><strong>Brand:</strong> ${phone.brand}</p>
+        <p class="text-gray-700 mb-2"><strong>ChipSet:</strong> ${
+          phone.mainFeatures.chipSet
+        }</p>
+        <p class="text-gray-700 mb-2"><strong>DisplaySize:</strong> ${
+          phone.mainFeatures.displaySize
+        }</p>
+        <p class="text-gray-700 mb-2"><strong>Storage:</strong> ${
+          phone.mainFeatures.storage
+        }</p>
+        
+        <p class="text-gray-700 mb-2"><strong>GPS:</strong> ${
+          phone.others?.GPS || "N/A"
+        }</p>
+        <p class="text-gray-700 mb-2"><strong>Release Date:</strong> ${
+          phone.releaseDate || "N/A"
+        }</p>
+      </div>
+    </div>
+  `;
+
+  modal.showModal();
+
+  // Remove blur when the modal is closed
+  modal.addEventListener("close", () => {
+    document.getElementById("phone-container").classList.remove("blur");
+  });
+  modal.showModal();
+};
+
 // Search button
 const searchPhone = () => {
-  console.log("searching...");
   const searchField = document.getElementById("search-field");
   currentSearchText = searchField.value; // Update current search text
-  console.log(currentSearchText);
   loadPhone(currentSearchText);
   searchField.value = ""; // Clear search field
 };
@@ -63,5 +114,3 @@ const showAll = () => {
 };
 
 document.getElementById("show-all-btn").addEventListener("click", showAll);
-
-console.log("phones");

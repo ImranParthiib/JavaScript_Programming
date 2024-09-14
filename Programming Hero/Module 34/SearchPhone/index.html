@@ -47,11 +47,27 @@
           Search
         </button>
       </section>
+      <!-- ?_____________Modal_________________ ?-->
+
+      <dialog
+        id="show_details_modal"
+        class="modal modal-bottom sm:modal-middle"
+      >
+        <div class="modal-box">
+          <div id="modal-body"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       <!-- ?_____________Phone Container_________________ ?-->
       <section
         id="phone-container"
         class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2 mt-8"
       ></section>
+
       <!-- ?_____________Show All Button_________________ ?-->
       <div class="flex justify-center mt-8">
         <button id="show-all-btn" class="btn btn-info hidden">Show All</button>
