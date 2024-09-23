@@ -1,3 +1,5 @@
+const readline = require("readline");
+
 function fibonacci(num) {
   if (num < 2) {
     return num;
@@ -6,13 +8,21 @@ function fibonacci(num) {
   }
 }
 
-let nTerms = 10;
-let result = "";
-if (nTerms <= 0) {
-  console.log("Enter a positive integer.");
-} else {
-  for (let i = 0; i < nTerms; i++) {
-    result += fibonacci(i) + " ";
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Enter the number of terms: ", (nTerms) => {
+  nTerms = parseInt(nTerms);
+  if (nTerms <= 0) {
+    console.log("Enter a positive integer.");
+  } else {
+    let result = "";
+    for (let i = 0; i < nTerms; i++) {
+      result += fibonacci(i) + " ";
+    }
+    console.log(result.trim());
   }
-  console.log(result.trim());
-}
+  rl.close();
+});
