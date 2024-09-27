@@ -57,10 +57,10 @@ const services = [
 ];
 
 const Services = () => {
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState(services[0]);
 
   return (
-    <div className="mx-auto p-8 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl shadow-2xl">
+    <div className="mx-auto p-24 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl shadow-2xl">
       <h2 className="text-4xl font-bold mb-12 text-center text-indigo-800">
         Our Services
       </h2>
@@ -84,32 +84,22 @@ const Services = () => {
           </ul>
         </div>
         <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-xl p-8">
-          {selectedService ? (
-            <>
-              <h3 className="text-3xl font-bold mb-4 text-indigo-800 flex items-center">
-                <selectedService.icon className="mr-3 h-8 w-8" />
-                {selectedService.name}
-              </h3>
-              <p className="text-xl text-indigo-600 mb-4">
-                {selectedService.description}
-              </p>
-              <p className="text-gray-700 mb-6">{selectedService.details}</p>
-              <h4 className="text-xl font-semibold mb-3 text-indigo-800">
-                Key Features:
-              </h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {selectedService.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-            </>
-          ) : (
-            <div className="flex items-center justify-center h-full">
-              <p className="text-xl text-gray-500">
-                Please select a service to see the details.
-              </p>
-            </div>
-          )}
+          <h3 className="text-3xl font-bold mb-4 text-indigo-800 flex items-center">
+            <selectedService.icon className="mr-3 h-8 w-8" />
+            {selectedService.name}
+          </h3>
+          <p className="text-xl text-indigo-600 mb-4">
+            {selectedService.description}
+          </p>
+          <p className="text-gray-700 mb-6">{selectedService.details}</p>
+          <h4 className="text-xl font-semibold mb-3 text-indigo-800">
+            Key Features:
+          </h4>
+          <ul className="list-disc list-inside text-gray-700 space-y-2">
+            {selectedService.features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
