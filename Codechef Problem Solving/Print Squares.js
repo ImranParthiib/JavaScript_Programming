@@ -1,4 +1,6 @@
-// https://www.codechef.com/practice/course/javascript/LPJAS02/problems/LPJSPR20
-for (let i = 1; i < 6; i++) {
-  console.log(`${i} - ${i * i}`);
+// https://www.codechef.com/practice/course/javascript/LPJAS11/problems/LPJSPR121
+let N = 5;
+while (N > 0) {
+    console.log(N * N);
+    N--;
 }
