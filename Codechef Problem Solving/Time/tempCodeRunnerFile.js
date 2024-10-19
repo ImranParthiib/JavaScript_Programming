@@ -1,0 +1,1 @@
+log(minutes, seconds);
