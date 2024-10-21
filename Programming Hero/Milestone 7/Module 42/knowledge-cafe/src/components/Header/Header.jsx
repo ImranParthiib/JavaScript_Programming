@@ -1,5 +1,5 @@
 import profile from "/images/profile.png";
-import logo from "../../../public/image.png";
+import logo from "/image.png";
 
 const Header = () => {
   return (

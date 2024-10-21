@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,6 +9,9 @@ const Footer = () => {
           Knowledge Cafe &copy;{new Date().getFullYear()} All Rights Reserved
         </p>
       </footer>
+      <div className="flex justify-center mt-4">
+        <ArrowUp className="w-6 h-6 text-white" />
+      </div>
     </>
   );
 };
