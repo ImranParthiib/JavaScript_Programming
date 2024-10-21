@@ -9,8 +9,11 @@ const Footer = () => {
           Knowledge Cafe &copy;{new Date().getFullYear()} All Rights Reserved
         </p>
       </footer>
-      <div className="flex justify-center mt-4">
-        <ArrowUp className="w-6 h-6 text-white" />
+
+      <div className="fixed bottom-0 right-0 m-3">
+        <a href="#top" className="text-6xl  px-24 py-2">
+          <ArrowUp className="text-purple-600 border rounded-full p-2 w-16 h-16" />
+        </a>
       </div>
     </>
   );
