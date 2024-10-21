@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdelxpuhu6y6vgvy1oevf.jpg",
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/1.jpg?raw=true",
     "title": "The Future of Web Development: Trends to Watch",
     "author": "John Doe",
     "author_img": "https://example.com/images/john-doe.jpg",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fptri4cof19hmkqe3bqs6.png",
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
     "title": "Understanding React Hooks: A Comprehensive Guide",
     "author": "Jane Smith",
     "author_img": "https://example.com/images/jane-smith.jpg",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "cover": "https://img.freepik.com/premium-photo/html-system-websites-concept-photo_1015182-28171.jpg?w=1060",
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/4.jpg?raw=true",
     "title": "Mastering CSS Grid: Layouts Made Easy",
     "author": "Michael Brown",
     "author_img": "https://example.com/images/michael-brown.jpg",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fptri4cof19hmkqe3bqs6.png",
-    "title": "Building Progressive Web Apps: A Complete Guide",
+    "title": "Why You should probably use TypeScript as a JavaScript Developer",
     "author": "Sarah Lee",
     "author_img": "https://example.com/images/sarah-lee.jpg",
     "posted_date": "2024-09-25",
