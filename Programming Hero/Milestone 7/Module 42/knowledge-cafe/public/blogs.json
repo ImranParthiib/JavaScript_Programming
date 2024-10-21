@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdelxpuhu6y6vgvy1oevf.jpg",
+    "title": "The Future of Web Development: Trends to Watch",
+    "author": "John Doe",
+    "author_img": "https://example.com/images/john-doe.jpg",
+    "posted_date": "2024-08-01",
+    "reading_time": "5 min read",
+    "hashtags": ["#WebDevelopment", "#FutureTrends", "#Technology"]
+  },
+  {
+    "id": 2,
+    "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fptri4cof19hmkqe3bqs6.png",
+    "title": "Understanding React Hooks: A Comprehensive Guide",
+    "author": "Jane Smith",
+    "author_img": "https://example.com/images/jane-smith.jpg",
+    "posted_date": "2024-08-15",
+    "reading_time": "8 min read",
+    "hashtags": ["#React", "#JavaScript", "#Hooks"]
+  },
+  {
+    "id": 3,
+    "cover": "https://img.freepik.com/premium-photo/html-system-websites-concept-photo_1015182-28171.jpg?w=1060",
+    "title": "10 Tips for Writing Clean and Maintainable Code",
+    "author": "Emily Johnson",
+    "author_img": "https://example.com/images/emily-johnson.jpg",
+    "posted_date": "2024-07-30",
+    "reading_time": "6 min read",
+    "hashtags": ["#Coding", "#CleanCode", "#BestPractices"]
+  },
+  {
+    "id": 4,
+    "cover": "https://img.freepik.com/premium-photo/html-system-websites-concept-photo_1015182-28171.jpg?w=1060",
+    "title": "Mastering CSS Grid: Layouts Made Easy",
+    "author": "Michael Brown",
+    "author_img": "https://example.com/images/michael-brown.jpg",
+    "posted_date": "2024-09-10",
+    "reading_time": "7 min read",
+    "hashtags": ["#CSS", "#CSSGrid", "#WebDesign"]
+  },
+  {
+    "id": 5,
+    "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fptri4cof19hmkqe3bqs6.png",
+    "title": "Building Progressive Web Apps: A Complete Guide",
+    "author": "Sarah Lee",
+    "author_img": "https://example.com/images/sarah-lee.jpg",
+    "posted_date": "2024-09-25",
+    "reading_time": "10 min read",
+    "hashtags": ["#PWA", "#WebApps", "#ProgressiveWebApps"]
+  }
+]
