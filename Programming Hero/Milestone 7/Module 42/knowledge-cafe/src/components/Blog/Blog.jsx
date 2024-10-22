@@ -57,15 +57,7 @@ const Blog = ({ blog }) => {
 };
 
 Blog.propTypes = {
-  blog: PropTypes.shape({
-    cover: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    author_img: PropTypes.string.isRequired,
-    posted_date: PropTypes.string.isRequired,
-    reading_time: PropTypes.string.isRequired,
-    hashtags: PropTypes.arrayOf(PropTypes.string).isRequired,
-  }).isRequired,
+  blog: PropTypes.object.isRequired,
 };
 
 export default Blog;
