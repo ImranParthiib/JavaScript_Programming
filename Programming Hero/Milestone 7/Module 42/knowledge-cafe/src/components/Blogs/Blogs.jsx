@@ -15,7 +15,7 @@ const Blogs = ({ addBookmark }) => {
   return (
     <>
       <div className="shadow-lg p-4 rounded-lg">
-        <h1 className="text-3xl font-bold  ">
+        <h1 className="text-3xl font-bold mb-2 ">
           Blogs:{" "}
           <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
             {blogs.length}

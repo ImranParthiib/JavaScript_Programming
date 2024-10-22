@@ -4,7 +4,7 @@ import { ArrowUp } from "lucide-react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-900 text-white py-2 mt-5">
+      <footer className="bg-gray-900 text-white py-2 mt-5 rounded">
         <p className="text-lg text-center">
           Knowledge Cafe &copy;{new Date().getFullYear()} All Rights Reserved
         </p>
