@@ -14,7 +14,7 @@ const Blog = ({ blog, addBookmark }) => {
   } = blog;
 
   return (
-    <div className="bg-white rounded-lg shadow-md max-w-2xl mx-auto overflow-hidden flex flex-col">
+    <div className="bg-gradient-to-tr from-fuchsia-300 via-fuchsia-100 to-fuchsia-300 rounded-lg shadow-md max-w-2xl mx-auto overflow-hidden flex flex-col">
       <img src={cover} alt="Blog Cover" className="w-full h-48 object-cover" />
       <div className="p-6 flex-grow flex flex-col">
         <div className="flex items-center justify-between mb-4">

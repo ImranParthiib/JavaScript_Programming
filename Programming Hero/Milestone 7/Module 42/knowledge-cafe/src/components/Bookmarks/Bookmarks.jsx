@@ -7,12 +7,16 @@ const Bookmarks = ({ bookmarks }) => {
     <div className=" rounded-lg h-full shadow-lg">
       <div>
         <h1 className="text-3xl font-bold text-center mb-4  bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-          Bookmarks <hr className="w-1/2 m-auto border-1 border-purple-700 " />
+          Bookmarks:{" "}
+          <span className="bg-gradient-to-r from-purple-400 via-slate-900 to-purple-500 bg-clip-text text-transparent">
+            {bookmarks.length}
+          </span>
+          <hr className="w-1/2 m-auto border-1 border-purple-700 " />
         </h1>
       </div>
       <div>
-        {bookmarks.map((bookmark) => (
-          <Bookmark key={bookmark.id} bookmark={bookmark} />
+        {bookmarks.map((bookmark, index) => (
+          <Bookmark key={index} bookmark={bookmark} />
         ))}
       </div>
     </div>
