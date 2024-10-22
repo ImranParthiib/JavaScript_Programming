@@ -4,7 +4,7 @@
     "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/1.jpg?raw=true",
     "title": "The Future of Web Development: Trends to Watch",
     "author": "John Doe",
-    "author_img": "https://example.com/images/john-doe.jpg",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy1.png?raw=true",
     "posted_date": "2024-08-01",
     "reading_time": 5,
     "hashtags": ["WebDevelopment", "FutureTrends", "Technology"]
@@ -14,7 +14,7 @@
     "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
     "title": "Understanding React Hooks: A Comprehensive Guide",
     "author": "Jane Smith",
-    "author_img": "https://example.com/images/jane-smith.jpg",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl1.jpg?raw=true",
     "posted_date": "2024-08-15",
     "reading_time": 8,
     "hashtags": ["React", "JavaScript", "Hooks"]
@@ -24,7 +24,7 @@
     "cover": "https://img.freepik.com/premium-photo/html-system-websites-concept-photo_1015182-28171.jpg?w=1060",
     "title": "10 Tips for Writing Clean and Maintainable Code",
     "author": "Emily Johnson",
-    "author_img": "https://example.com/images/emily-johnson.jpg",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl2.jpg?raw=true",
     "posted_date": "2024-07-30",
     "reading_time": 9,
     "hashtags": ["Coding", "CleanCode", "BestPractices"]
@@ -34,7 +34,7 @@
     "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/4.jpg?raw=true",
     "title": "Mastering CSS Grid: Layouts Made Easy",
     "author": "Michael Brown",
-    "author_img": "https://example.com/images/michael-brown.jpg",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy2.png?raw=true",
     "posted_date": "2024-09-10",
     "reading_time": 10,
     "hashtags": ["CSS", "CSSGrid", "WebDesign"]
@@ -44,9 +44,79 @@
     "cover": "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fptri4cof19hmkqe3bqs6.png",
     "title": "Why You should probably use TypeScript as a JavaScript Developer",
     "author": "Sarah Lee",
-    "author_img": "https://example.com/images/sarah-lee.jpg",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl1.jpg?raw=true",
     "posted_date": "2024-09-25",
     "reading_time": 7,
     "hashtags": ["PWA", "WebApps", "ProgressiveWebApps"]
+  },
+  {
+    "id": 6,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "Exploring the Power of GraphQL",
+    "author": "David Wilson",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy1.png?raw=true",
+    "posted_date": "2024-10-05",
+    "reading_time": 6,
+    "hashtags": ["GraphQL", "API", "WebDevelopment"]
+  },
+  {
+    "id": 7,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "A Deep Dive into Node.js Performance Optimization",
+    "author": "Laura Martinez",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl2.jpg?raw=true",
+    "posted_date": "2024-10-20",
+    "reading_time": 12,
+    "hashtags": ["Node.js", "Performance", "Backend"]
+  },
+  {
+    "id": 8,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "Building Scalable Microservices with Docker and Kubernetes",
+    "author": "James Anderson",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy2.png?raw=true",
+    "posted_date": "2024-11-01",
+    "reading_time": 15,
+    "hashtags": ["Microservices", "Docker", "Kubernetes"]
+  },
+  {
+    "id": 9,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "Introduction to Machine Learning with Python",
+    "author": "Sophia Taylor",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl1.jpg?raw=true",
+    "posted_date": "2024-11-15",
+    "reading_time": 20,
+    "hashtags": ["MachineLearning", "Python", "AI"]
+  },
+  {
+    "id": 10,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "The Ultimate Guide to Responsive Web Design",
+    "author": "Daniel Harris",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy1.png?raw=true",
+    "posted_date": "2024-12-01",
+    "reading_time": 10,
+    "hashtags": ["ResponsiveDesign", "CSS", "WebDesign"]
+  },
+  {
+    "id": 11,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "Mastering JavaScript ES6 and Beyond",
+    "author": "Olivia Clark",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/girl2.jpg?raw=true",
+    "posted_date": "2024-12-15",
+    "reading_time": 8,
+    "hashtags": ["JavaScript", "ES6", "Programming"]
+  },
+  {
+    "id": 12,
+    "cover": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/2.png?raw=true",
+    "title": "Getting Started with Serverless Architecture",
+    "author": "Ethan Lewis",
+    "author_img": "https://github.com/ImranParthiib/JavaScript_Programming/blob/main/Programming%20Hero/Milestone%207/Module%2042/knowledge-cafe/public/images/boy2.png?raw=true",
+    "posted_date": "2025-01-01",
+    "reading_time": 7,
+    "hashtags": ["Serverless", "AWS", "Cloud"]
   }
 ]

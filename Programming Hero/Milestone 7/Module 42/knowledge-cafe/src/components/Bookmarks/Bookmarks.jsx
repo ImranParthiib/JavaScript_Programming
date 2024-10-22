@@ -2,15 +2,12 @@ import React from "react";
 
 const Bookmarks = () => {
   return (
-    <div className="bg-white h-screen my-8 shadow-lg rounded-lg p-6 m-4">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
-        Bookmarks
-      </h1>
-      <ul className="list-disc list-inside text-gray-700">
-        <li className="mb-2">Bookmark 1</li>
-        <li className="mb-2">Bookmark 2</li>
-        <li className="mb-2">Bookmark 3</li>
-      </ul>
+    <div className=" rounded-lg h-full shadow-lg">
+      <div>
+        <h1 className="text-3xl font-bold text-center mb-4  bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          Bookmarks <hr className="w-1/2 m-auto border-1 border-purple-700 " />
+        </h1>
+      </div>
     </div>
   );
 };

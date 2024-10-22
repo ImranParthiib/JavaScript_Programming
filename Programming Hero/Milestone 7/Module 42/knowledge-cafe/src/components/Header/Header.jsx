@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <img src={profile} alt="Profile" />
       </div>
-      <hr className="border-2 mt-2" />
+      <hr className="border-2 border-purple-400 mt-2" />
     </>
   );
 };

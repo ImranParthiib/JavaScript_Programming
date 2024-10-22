@@ -13,8 +13,8 @@ const Blogs = () => {
 
   return (
     <>
-      <div>
-        <h1 className="text-3xl font-bold my-8">
+      <div className="shadow-lg p-4 rounded-lg">
+        <h1 className="text-3xl font-bold  ">
           Blogs:{" "}
           <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
             {blogs.length}

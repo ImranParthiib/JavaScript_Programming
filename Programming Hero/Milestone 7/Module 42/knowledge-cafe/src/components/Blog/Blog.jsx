@@ -36,7 +36,6 @@ const Blog = ({ blog }) => {
         </div>
 
         <h1 className="text-2xl font-bold mb-4">{title}</h1>
-
         <div className="flex flex-wrap mb-4">
           {hashtags.map((hashtag, index) => (
             <span key={index} className="text-sm text-gray-600 mr-2">
@@ -45,9 +44,11 @@ const Blog = ({ blog }) => {
           ))}
         </div>
 
-        <div className="mt-auto">
-          <div className="text-sm text-blue-600 cursor-pointer w-full text-left">
-            Mark as read
+        <div className="mt-auto max-w-fit p-0.5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-sm">
+          <div className="relative p-1 text-purple-600 cursor-pointer max-w-fit bg-white rounded-sm">
+            <div className="bg-white p-1 text-sm font-bold">
+              Mark as read
+            </div>
           </div>
         </div>
       </div>
