@@ -3,14 +3,14 @@ import Blogs from "../Blogs/Blogs";
 import Bookmarks from "../Bookmarks/Bookmarks";
 import PropTypes from "prop-types";
 
-const Main = ({ addBookmark, bookmarks }) => {
+const Main = ({ addBookmark, bookmarks, readTime, readingTime }) => {
   return (
     <div className="grid grid-cols-3 gap-4 my-4 rounded-lg p-4 ">
       <div className="col-span-2">
-        <Blogs addBookmark={addBookmark} />
+        <Blogs addBookmark={addBookmark} readTime={readTime} />
       </div>
       <div className="col-span-1">
-        <Bookmarks bookmarks={bookmarks} />
+        <Bookmarks bookmarks={bookmarks} readingTime={readingTime} />
       </div>
     </div>
   );
@@ -18,6 +18,8 @@ const Main = ({ addBookmark, bookmarks }) => {
 Main.propTypes = {
   addBookmark: PropTypes.func.isRequired,
   bookmarks: PropTypes.array.isRequired,
+  readTime: PropTypes.func.isRequired,
+  readingTime: PropTypes.number.isRequired,
 };
 
 export default Main;

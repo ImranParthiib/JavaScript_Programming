@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegBookmark } from "react-icons/fa6";
 import PropTypes from "prop-types";
 
-const Blog = ({ blog, addBookmark }) => {
+const Blog = ({ blog, addBookmark, readTime }) => {
   const {
     cover,
     title,
@@ -48,7 +48,12 @@ const Blog = ({ blog, addBookmark }) => {
 
         <div className="mt-auto max-w-fit p-0.5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-sm">
           <div className="relative p-1 text-purple-600 cursor-pointer max-w-fit bg-white rounded-sm">
-            <div className="bg-white p-1 text-sm font-bold">Mark as read</div>
+            <button
+              onClick={() => readTime(reading_time)}
+              className="bg-white p-1 text-sm font-bold"
+            >
+              Mark as read
+            </button>
           </div>
         </div>
       </div>
@@ -59,6 +64,7 @@ const Blog = ({ blog, addBookmark }) => {
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
   addBookmark: PropTypes.func.isRequired,
+  readTime: PropTypes.func.isRequired,
 };
 
 export default Blog;
