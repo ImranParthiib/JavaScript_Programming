@@ -1,18 +1,23 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/main";
+import { storeBookmarks, getStoredBookmarks } from "./utilities/localStorage";
 
 function App() {
-  const [bookmarks, setBookmarks] = useState([]);
+  const [bookmarks, setBookmarks] = useState(getStoredBookmarks());
   const [readingTime, setReadingTime] = useState(0);
+
+  useEffect(() => {
+    storeBookmarks(bookmarks);
+  }, [bookmarks]);
 
   const addBookmark = (blog) => {
     setBookmarks([...bookmarks, blog]);
   };
 
-  const readTime = (time,id) => {
+  const readTime = (time, id) => {
     setReadingTime(readingTime + time);
     setBookmarks(bookmarks.filter((bookmark) => bookmark.id !== id));
   };
