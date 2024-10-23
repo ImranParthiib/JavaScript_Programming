@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Bookmark = ({ bookmark }) => {
+const Bookmark = ({ bookmark, readTime }) => {
   const {
+    id,
     title,
     cover,
     author,
@@ -48,6 +49,12 @@ const Bookmark = ({ bookmark }) => {
                 </span>
               ))}
             </div>
+            <button
+              onClick={() => readTime(reading_time, id)}
+              className="bg-white p-1 text-sm font-bold"
+            >
+              Mark as read
+            </button>
           </div>
         </div>
       </div>
@@ -57,6 +64,7 @@ const Bookmark = ({ bookmark }) => {
 
 Bookmark.propTypes = {
   bookmark: PropTypes.object.isRequired,
+  readTime: PropTypes.func.isRequired,
 };
 
 export default Bookmark;

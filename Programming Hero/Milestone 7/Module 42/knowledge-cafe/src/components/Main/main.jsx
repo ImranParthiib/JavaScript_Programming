@@ -10,7 +10,11 @@ const Main = ({ addBookmark, bookmarks, readTime, readingTime }) => {
         <Blogs addBookmark={addBookmark} readTime={readTime} />
       </div>
       <div className="col-span-1">
-        <Bookmarks bookmarks={bookmarks} readingTime={readingTime} />
+        <Bookmarks
+          bookmarks={bookmarks}
+          readingTime={readingTime}
+          readTime={readTime}
+        />
       </div>
     </div>
   );

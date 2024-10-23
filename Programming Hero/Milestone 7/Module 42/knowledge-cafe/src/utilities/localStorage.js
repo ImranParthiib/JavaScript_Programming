@@ -6,9 +6,13 @@ const getStoredBookmarks = () => {
   return storedBookmarks ? JSON.parse(storedBookmarks) : [];
 };
 
-
 const storeReadTime = (time) => {
   localStorage.setItem("readingTime", time);
-};  
+};
 
-export { storeBookmarks, getStoredBookmarks, removeStoredBookmarks };
+const getStoreReadTime = () => {
+  const storedTime = localStorage.getItem("readingTime");
+  return storedTime ? JSON.parse(storedTime) : null;
+};
+
+export { storeBookmarks, getStoredBookmarks, storeReadTime, getStoreReadTime };
