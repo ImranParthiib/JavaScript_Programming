@@ -29,8 +29,8 @@ function App() {
   };
 
   return (
-    <div className="max-w-screen-2xl m-auto mt-5 ">
-      <Header />
+    <div >
+      <Header  />
       <Main
         addBookmark={addBookmark}
         bookmarks={bookmarks}
