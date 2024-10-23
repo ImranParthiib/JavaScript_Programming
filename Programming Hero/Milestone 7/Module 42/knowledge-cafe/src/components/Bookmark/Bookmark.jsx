@@ -39,7 +39,7 @@ const Bookmark = ({ bookmark, readTime }) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="m-1">
             <img className="w-56 rounded" src={cover} alt="" />
             <div className="p-1">
               {hashtags.map((hashtag, index) => (
@@ -51,7 +51,7 @@ const Bookmark = ({ bookmark, readTime }) => {
             </div>
             <button
               onClick={() => readTime(reading_time, id)}
-              className="bg-white p-1 text-sm font-bold rounded bg-gradient-to-r from-purple-700  via-slate-400 to-red-400"
+              className="bg-white text-sm font-bold rounded bg-gradient-to-r from-purple-700  via-slate-400 to-red-400 mb-3 p-2"
             >
               Mark as read
             </button>

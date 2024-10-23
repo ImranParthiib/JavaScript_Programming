@@ -12,7 +12,7 @@ const storeReadTime = (time) => {
 
 const getStoreReadTime = () => {
   const storedTime = localStorage.getItem("readingTime");
-  return storedTime ? JSON.parse(storedTime) : null;
+  return storedTime ? JSON.parse(storedTime) : 0;
 };
 
 export { storeBookmarks, getStoredBookmarks, storeReadTime, getStoreReadTime };
