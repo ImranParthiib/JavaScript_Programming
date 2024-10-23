@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Bookmark = ({ bookmark, readTime }) => {
+const Bookmark = ({ bookmark }) => {
   const {
     title,
     cover,
@@ -19,7 +19,7 @@ const Bookmark = ({ bookmark, readTime }) => {
             {" "}
             <h1 className="text-2xl">
               {title}{" "}
-              <strong className="text-sm text-amber-600">
+              <strong className="text-sm text-pink-600">
                 {" "}
                 {reading_time} Min Read
               </strong>

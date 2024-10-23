@@ -1,9 +1,10 @@
 import React from "react";
-import { FaRegBookmark } from "react-icons/fa6";
+import { FaBookmark } from "react-icons/fa6";
 import PropTypes from "prop-types";
 
 const Blog = ({ blog, addBookmark, readTime }) => {
   const {
+    id,
     cover,
     title,
     author,
@@ -31,8 +32,11 @@ const Blog = ({ blog, addBookmark, readTime }) => {
           </div>
           <div className="flex items-center text-gray-500">
             <span className="text-sm mr-2">{reading_time} min read</span>
-            <button onClick={() => addBookmark(blog)} className="w-4 h-4">
-              <FaRegBookmark />
+            <button
+              onClick={() => addBookmark(blog)}
+              className="w-4 h-4 text-purple-700"
+            >
+              <FaBookmark />
             </button>
           </div>
         </div>
@@ -49,7 +53,7 @@ const Blog = ({ blog, addBookmark, readTime }) => {
         <div className="mt-auto max-w-fit p-0.5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-sm">
           <div className="relative p-1 text-purple-600 cursor-pointer max-w-fit bg-white rounded-sm">
             <button
-              onClick={() => readTime(reading_time)}
+              onClick={() => readTime(reading_time, id)}
               className="bg-white p-1 text-sm font-bold"
             >
               Mark as read
