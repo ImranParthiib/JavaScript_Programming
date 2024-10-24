@@ -14,7 +14,8 @@ dist-ssr
 package-lock.json
 package.json
 eslint.config.js
-
+firebase.js
+ 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
